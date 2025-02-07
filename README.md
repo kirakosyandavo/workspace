@@ -20,15 +20,4 @@ A simple C-based library management system that allows users to:
 
 - C Compiler (e.g., GCC)
 
-## Setup Instructions
-
-### Step 1: Install C Compiler
-Ensure you have a C compiler installed on your machine. You can use GCC (GNU Compiler Collection) which is available for most platforms:
-- **Linux/macOS**: GCC is usually pre-installed or can be installed via a package manager.
-- **Windows**: Install MinGW or any C compiler of your choice.
-
-### Step 2: Clone the Repository or Download Files
-You can either clone the repository or manually download the project files:
-```bash
-git clone <repository-url>
 
