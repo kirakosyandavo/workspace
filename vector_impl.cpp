@@ -17,6 +17,10 @@ int Vector::at(int index)const{
     return m_data[index];
 }
 void Vector::push_back(int index){
+    if(m_capacity==0){
+        m_capacity=2;
+        reallocate(m_capacity);
+    }
     if(m_size==m_capacity){
         m_capacity=m_capacity*2;
         reallocate(m_capacity);
@@ -26,10 +30,10 @@ void Vector::push_back(int index){
         m_data[m_size]=index;
     }
     m_size++;
-};
+}
 void Vector::pop_back(){
     m_size=m_size-1;
-};
+}
 int Vector::getSize()const{
  return m_size;
 }
