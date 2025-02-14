@@ -20,6 +20,7 @@ void Vector::push_back(int index){
     if(m_capacity==0){
         m_capacity=2;
         reallocate(m_capacity);
+        m_data[m_size]=index;
     }
     if(m_size==m_capacity){
         m_capacity=m_capacity*2;
